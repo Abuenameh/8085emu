@@ -722,8 +722,8 @@ window.onload = function(e) {
 			}
 		});
 	flask.updateLanguage('8085asm');
-	editor.setValue("          ORG F000\n          ;The ORG statement\n          ;loads code starting\n          ;from f000\n\n          ;Enter you code after\n          ;this line\n   START: ");
-	flask.updateCode("ORG F000\n;The ORG statement\n;loads code starting\n;from f000\n\n;Enter you code after\n;this line\n");
+	editor.setValue("ORG 9000\n");
+	flask.updateCode("ORG 9000\n");
 };
 
 const mq = window.matchMedia("(max-width: 910px)");
