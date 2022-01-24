@@ -259,6 +259,8 @@ function newFile() {
 	flask.updateCode('');
 	document.querySelector('#modal-shade').click();
 	editor.setValue('');
+	editor.setValue("ORG 9000\n");
+	flask.updateCode("ORG 9000\n");
 }
 
 function copyTextToClipboard(text) {
