@@ -204,8 +204,8 @@ function goto(){
 
 function getSaverSettings() {
 	return {
-		dups: saveSettings.dups.checked,
-		macros: saveSettings.macros.checked
+		dups: false,
+		macros: false
 	}
 }
 
