@@ -259,8 +259,8 @@ function newFile() {
 	flask.updateCode('');
 	document.querySelector('#modal-shade').click();
 	editor.setValue('');
-	editor.setValue("ORG 9000\n");
-	flask.updateCode("ORG 9000\n");
+	editor.setValue("ORG 9000h\n");
+	flask.updateCode("ORG 9000h\n");
 }
 
 function copyTextToClipboard(text) {
@@ -724,8 +724,8 @@ window.onload = function(e) {
 			}
 		});
 	flask.updateLanguage('8085asm');
-	editor.setValue("ORG 9000\n");
-	flask.updateCode("ORG 9000\n");
+	editor.setValue("ORG 9000h\n");
+	flask.updateCode("ORG 9000h\n");
 };
 
 const mq = window.matchMedia("(max-width: 910px)");
