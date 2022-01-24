@@ -215,10 +215,10 @@ function saveFile() {
 	var name = document.querySelector('#save-file--filename').value;
 	var ext = name.split('.').slice(-1)[0];
 
-	if(!['txt'].includes(ext)) {
-		document.querySelector('#save-file--warn').textContent = 'File Extension must be .txt, for compatibility.';
-		return;
-	}
+	// if(!['txt'].includes(ext)) {
+	// 	document.querySelector('#save-file--warn').textContent = 'File Extension must be .txt, for compatibility.';
+	// 	return;
+	// }
 	var copy;
 	if(usingFlask)
 		copy = flask.getCode();
