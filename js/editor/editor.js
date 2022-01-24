@@ -695,8 +695,8 @@ function encodeDocument() {
 }
 
 function goToRunner(code) {
-	var urlBase = window.location.origin;
-	var goto = urlBase + '/?listing='+ code;
+	var urlBase = window.location.href.replace(/[^/]*$/, '');
+	var goto = urlBase + '?listing='+ code;
 	return goto;
 }
 
