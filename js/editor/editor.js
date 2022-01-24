@@ -176,12 +176,12 @@ function readFile(event) {
 	var file = event.target.files[0];
 	var ext = file.name.split('.').slice(-1)[0];
 
-	if(!['txt'].includes(ext)){
-		document.querySelector('#toast').textContent = "Invalid file extension! Choose a file with .txt extension."
-		document.getElementById('toast').classList.remove('hidden');
-		window.setTimeout(()=>document.getElementById('toast').classList.add('hidden'), 4000);
-		return;
-	}
+	// if(!['txt'].includes(ext)){
+	// 	document.querySelector('#toast').textContent = "Invalid file extension! Choose a file with .txt extension."
+	// 	document.getElementById('toast').classList.remove('hidden');
+	// 	window.setTimeout(()=>document.getElementById('toast').classList.add('hidden'), 4000);
+	// 	return;
+	// }
 
 	var reader = new FileReader;
 	reader.addEventListener('load', () => {
